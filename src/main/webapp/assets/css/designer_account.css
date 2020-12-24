@@ -60,10 +60,30 @@ html,body{
 }
 .form-container .form-inner form .field{
     height: 50px;
-    width: 100%;
+    width: 70%;
     margin-top: 20px;
 }
 
+.field input{
+    display: block;
+}
+
+.field.success input{
+    border-color: #2ecc71;
+}
+
+.field.error input{
+    border-color: #e74c3c;
+}
+
+.field small{
+    visibility: hidden;
+}
+
+.field.error small{
+    visibility: visible;
+    color: #e74c3c;
+}
 
 .form-inner form .field input{
     height: 50px;
@@ -78,7 +98,7 @@ html,body{
 }
 
 .form-inner form .field input:focus{
-    border-color: #e22807;
+    border-color: #FF7A00;
 }
 
 .form-inner form .pass-link{
@@ -109,7 +129,7 @@ form .field input[type="submit"]{
     padding-left: 0px;
     border: none;
     cursor: pointer;
-    background: #e22807
+    background: #FF7A00;
 
 }
 
